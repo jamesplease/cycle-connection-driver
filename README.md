@@ -34,17 +34,21 @@ connection status at the time that your app's main function is passed to `run`.
 This driver accepts no sinks.
 
 ```js
+import {run} from '@cycle/core';
+import {makeDOMDriver, div} from '@cycle/dom';
 import cycleConnectionDriver from 'cycle-connection-driver';
 
-function main({connection}) {
-  const connectionStatus$ = connection;
-
-  // Subscribe to changes in the connection
-  connectionStatus$.subscribe(status => console.log(status));
+function main({Connection}) {
+  return {
+    DOM: Connection.map(connectionStatus =>
+      div('.connection-status', `Connection - Currently ${connectionStatus}`)
+    )
+  };
 }
 
-Cycle.run(main, {
-  connection: cycleConnectionDriver
+run(main, {
+  DOM: makeDOMDriver('.app'),
+  Connection: cycleConnectionDriver
 });
 ```
 

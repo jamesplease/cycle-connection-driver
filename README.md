@@ -40,7 +40,7 @@ function main({connection}) {
   const connectionStatus$ = connection;
 
   // Subscribe to changes in the connection
-  connection.do(status => console.log(status));
+  connectionStatus$.subscribe(status => console.log(status));
 }
 
 Cycle.run(main, {

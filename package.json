@@ -50,6 +50,7 @@
     "json-loader": "^0.5.3",
     "mocha": "^2.3.4",
     "rx": "4.1.0",
+    "simple-jsdom": "2.0.0",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
     "vinyl-source-stream": "^1.1.0",

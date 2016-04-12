@@ -53,7 +53,7 @@ describe('cycleConnectionDriver', () => {
   });
 
   describe('when the user goes online and offline', () => {
-    it('should emit an initial value of `offline`', done => {
+    it('should emit the proper values', done => {
       window.navigator.onLine = false;
       const connectionStatus$ = cycleConnectionDriver();
 

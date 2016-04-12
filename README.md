@@ -18,7 +18,7 @@ This driver enables you to implement that functionality within Cycle.js.
 
 ### Installation
 
-The recommended approach is through [npm](https://www.npmjs.com/):
+The recommended installation method is through [npm](https://www.npmjs.com/):
 
 ```sh
 npm install cycle-connection-driver
@@ -26,7 +26,7 @@ npm install cycle-connection-driver
 
 ### Getting Started
 
-The output of this driver is a single Observable. The Observable emits one of
+The output of this driver is a single Observable. This Observable emits one of
 two values: `"online"` and `"offline"`, corresponding to whether the user has
 become connected or disconnected. The initial value of the stream is the user's
 connection status at the time that your app's main function is passed to `run`.

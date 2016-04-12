@@ -1,6 +1,6 @@
 {
   "name": "cycle-connection-driver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Cycle.js driver for connection status",
   "main": "dist/cycle-connection-driver.js",
   "scripts": {
@@ -15,7 +15,17 @@
     "type": "git",
     "url": "https://github.com/jmeas/cycle-connection-driver.git"
   },
-  "keywords": [],
+  "keywords": [
+    "cycle",
+    "cyclejs",
+    "cycle.js",
+    "driver",
+    "cycle-driver",
+    "cyclejs-driver",
+    "cycle.js-driver",
+    "connectivity",
+    "connection"
+  ],
   "author": "Jmeas <jellyes2@gmail.com>",
   "license": "MIT",
   "bugs": {

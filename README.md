@@ -14,7 +14,7 @@ Many web apps respond to when a user goes online or offline. For example, Slack
 displays a warning message and prevents you from typing a new message when you
 go offline.
 
-This driver enables you to implement that functionality within Cycle.js.
+This driver helps you respond to changes to a user's connection status within Cycle.js.
 
 ### Installation
 

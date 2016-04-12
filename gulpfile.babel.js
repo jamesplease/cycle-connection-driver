@@ -66,6 +66,9 @@ function build() {
         libraryTarget: 'umd',
         library: config.mainVarName
       },
+      externals: {
+        rx: 'Rx'
+      },
       module: {
         loaders: [
           { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }

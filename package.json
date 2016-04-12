@@ -15,7 +15,17 @@
     "type": "git",
     "url": "https://github.com/jmeas/cycle-connection-driver.git"
   },
-  "keywords": [],
+  "keywords": [
+    "cycle",
+    "cyclejs",
+    "cycle.js",
+    "driver",
+    "cycle-driver",
+    "cyclejs-driver",
+    "cycle.js-driver",
+    "connectivity",
+    "connection"
+  ],
   "author": "Jmeas <jellyes2@gmail.com>",
   "license": "MIT",
   "bugs": {

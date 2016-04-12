@@ -62,6 +62,6 @@
     "mainVarName": "cycleConnectionDriver"
   },
   "dependencies": {
-    "rx": "4.1.0"
+    "rx": "^4.1.0"
   }
 }

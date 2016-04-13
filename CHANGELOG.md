@@ -1,3 +1,7 @@
+### [1.0.2](https://github.com/jmeas/cycle-connection-driver/releases/tag/1.0.2)
+
+- Fix build
+
 ### [1.0.1](https://github.com/jmeas/cycle-connection-driver/releases/tag/1.0.1)
 
 - Add keywords to `package.json`

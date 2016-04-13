@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("Rx"));
+		module.exports = factory(require("rx"));
 	else if(typeof define === 'function' && define.amd)
-		define(["Rx"], factory);
+		define(["rx"], factory);
 	else if(typeof exports === 'object')
-		exports["cycleConnectionDriver"] = factory(require("Rx"));
+		exports["cycleConnectionDriver"] = factory(require("rx"));
 	else
-		root["cycleConnectionDriver"] = factory(root["Rx"]);
+		root["cycleConnectionDriver"] = factory(root["rx"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -63,18 +63,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _rx = __webpack_require__(1);
 	
 	function cycleConnectionDriver() {
-	  // Map our online events to the string "online"
 	  var online$ = _rx.Observable.fromEvent(window, 'online').map(function () {
 	    return 'online';
 	  });
-	  // Map our offline events to the string "offline"
 	  var offline$ = _rx.Observable.fromEvent(window, 'offline').map(function () {
 	    return 'offline';
 	  });
 	
 	  var currentStatus = window.navigator.onLine ? 'online' : 'offline';
 	
-	  // Merge the two streams, and start with the current connection status
 	  var connectionStatus$ = _rx.Observable.merge(online$, offline$).startWith(currentStatus);
 	
 	  return connectionStatus$;

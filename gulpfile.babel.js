@@ -67,7 +67,7 @@ function build() {
         library: config.mainVarName
       },
       externals: {
-        rx: 'Rx'
+        rx: true
       },
       module: {
         loaders: [
